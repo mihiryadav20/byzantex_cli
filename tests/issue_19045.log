@@ -1,0 +1,36 @@
+UVM_FATAL @   2373129 ps: (otbn_model_if.sv:77) [otbn_model_if] Check failed (u_model.otbn_model_step_crc(handle, item, crc_state) == 0) Failed to update CRC
+UVM_INFO @   2373129 ps: (uvm_report_catcher.svh:705) [UVM/REPORT/CATCHER]
+UVM_FATAL @   2060914 ps: (otbn_model_if.sv:77) [otbn_model_if] Check failed (u_model.otbn_model_step_crc(handle, item, crc_state) == 0) Failed to update CRC
+UVM_INFO @   2060914 ps: (uvm_report_catcher.svh:705) [UVM/REPORT/CATCHER]
+UVM_FATAL @  88113688 ps: (otbn_base_vseq.sv:582) [uvm_test_top.env.virtual_sequencer.otbn_sw_errs_fatal_chk_vseq] Check failed (!(cfg.loop_vif.loop_stack_push || cfg.loop_vif.loop_stack_pop) &&                       !cfg.trace_vif.locking_o)
+UVM_INFO @  88113688 ps: (uvm_report_catcher.svh:705) [UVM/REPORT/CATCHER]
+UVM_FATAL @  25973747 ps: (otbn_base_vseq.sv:582) [uvm_test_top.env.virtual_sequencer.otbn_sec_wipe_err_vseq] Check failed (!(cfg.loop_vif.loop_stack_push || cfg.loop_vif.loop_stack_pop) &&                       !cfg.trace_vif.locking_o)
+UVM_INFO @  25973747 ps: (uvm_report_catcher.svh:705) [UVM/REPORT/CATCHER]
+UVM_FATAL @  17274033 ps: (otbn_base_vseq.sv:369) [uvm_test_top.env.virtual_sequencer.otbn_urnd_err_vseq] Check failed (cfg.model_agent_cfg.vif.status == otbn_pkg::StatusIdle) Timed out waiting for OTBN to be idle before execution
+UVM_INFO @  17274033 ps: (uvm_report_catcher.svh:705) [UVM/REPORT/CATCHER]
+UVM_FATAL @ 10008294145 ps: (otbn_stack_addr_integ_chk_vseq.sv:72) [uvm_test_top.env.virtual_sequencer.otbn_stack_addr_integ_chk_vseq] timeout occurred!
+UVM_INFO @ 10008294145 ps: (uvm_report_catcher.svh:705) [UVM/REPORT/CATCHER]
+UVM_FATAL @   9988012 ps: (otbn_base_vseq.sv:369) [uvm_test_top.env.virtual_sequencer.otbn_alu_bignum_mod_err_vseq] Check failed (cfg.model_agent_cfg.vif.status == otbn_pkg::StatusIdle) Timed out waiting for OTBN to be idle before execution
+UVM_INFO @   9988012 ps: (uvm_report_catcher.svh:705) [UVM/REPORT/CATCHER]
+UVM_FATAL @ 10014806449 ps: (otbn_stack_addr_integ_chk_vseq.sv:58) [uvm_test_top.env.virtual_sequencer.otbn_stack_addr_integ_chk_vseq] timeout occurred!
+UVM_INFO @ 10014806449 ps: (uvm_report_catcher.svh:705) [UVM/REPORT/CATCHER]
+UVM_FATAL @  23098619 ps: (otbn_base_vseq.sv:348) [uvm_test_top.env.virtual_sequencer.otbn_imem_err_vseq] Check failed (!cfg.under_reset)
+UVM_INFO @  23098619 ps: (uvm_report_catcher.svh:705) [UVM/REPORT/CATCHER]
+UVM_FATAL @   8710818 ps: (otbn_base_vseq.sv:369) [uvm_test_top.env.virtual_sequencer.otbn_rf_bignum_intg_err_vseq] Check failed (cfg.model_agent_cfg.vif.status == otbn_pkg::StatusIdle) Timed out waiting for OTBN to be idle before execution
+UVM_INFO @   8710818 ps: (uvm_report_catcher.svh:705) [UVM/REPORT/CATCHER]
+xmsim: *E,ASRTST (/home/greg/work/opentitan_area/opentitan/scratch/master/otbn-sim-xcelium/default/src/lowrisc_dv_otbn_sva_*/otbn_idle_checker.sv,87): Assertion IdleIfStart_A has failed has 1 failures:
+xmsim: *E,ASRTST (/home/greg/work/opentitan_area/opentitan/scratch/master/otbn-sim-xcelium/default/src/lowrisc_dv_otbn_sva_0.1/otbn_idle_checker.sv,87): (time 13176420 PS) Assertion tb.dut.idle_checker.IdleIfStart_A has failed
+UVM_ERROR @  13176420 ps: (otbn_idle_checker.sv:87) [ASSERT FAILED] IdleIfStart_A
+UVM_INFO @  13176420 ps: (uvm_report_catcher.svh:705) [UVM/REPORT/CATCHER]
+UVM_FATAL @  12994571 ps: (otbn_base_vseq.sv:369) [uvm_test_top.env.virtual_sequencer.otbn_dmem_err_vseq] Check failed (cfg.model_agent_cfg.vif.status == otbn_pkg::StatusIdle) Timed out waiting for OTBN to be idle before execution
+UVM_INFO @  12994571 ps: (uvm_report_catcher.svh:705) [UVM/REPORT/CATCHER]
+UVM_FATAL @   7469835 ps: (otbn_base_vseq.sv:369) [uvm_test_top.env.virtual_sequencer.otbn_dmem_err_vseq] Check failed (cfg.model_agent_cfg.vif.status == otbn_pkg::StatusIdle) Timed out waiting for OTBN to be idle before execution
+UVM_INFO @   7469835 ps: (uvm_report_catcher.svh:705) [UVM/REPORT/CATCHER]
+xmsim: *E,ASRTST (/home/greg/work/opentitan_area/opentitan/scratch/master/otbn-sim-xcelium/default/src/lowrisc_dv_otbn_sim_*/tb.sv,270): Assertion MatchingStatus_A has failed has 20 failures:
+xmsim: *E,ASRTST (/home/greg/work/opentitan_area/opentitan/scratch/master/otbn-sim-xcelium/default/src/lowrisc_dv_otbn_sim_0.1/tb.sv,270): (time 5045702 PS) Assertion tb.MatchingStatus_A has failed
+xmsim: *E,ASRTST (/home/greg/work/opentitan_area/opentitan/scratch/master/otbn-sim-xcelium/default/src/lowrisc_dv_otbn_model_agent_0.1/otbn_model_if.sv,137): (time 5045702 PS) Assertion tb.model_if.NoModelErrs has failed
+UVM_ERROR @   5045702 ps: (tb.sv:270) [ASSERT FAILED] MatchingStatus_A
+UVM_INFO @   5045702 ps: (uvm_report_catcher.svh:705) [UVM/REPORT/CATCHER]
+xmsim: *E,ASRTST (/home/greg/work/opentitan_area/opentitan/scratch/master/otbn-sim-xcelium/default/src/lowrisc_dv_otbn_sim_0.1/tb.sv,270): (time 2205650 PS) Assertion tb.MatchingStatus_A has failed
+UVM_ERROR @   2205650 ps: (tb.sv:270) [ASSERT FAILED] MatchingStatus_A
+UVM_INFO @   2205650 ps: (uvm_report_catcher.svh:705) [UVM/REPORT/CATCHER]

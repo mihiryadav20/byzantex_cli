@@ -1,0 +1,14 @@
+UVM_INFO @ 1100.402 us: (sw_logger_if.sv:400) [SW_LOG] Booting OpenTitan (Earl Grey)...
+UVM_INFO @ 1120.100 us: (sw_logger_if.sv:400) [SW_LOG] ROM: Validation successful. Jumping to Flash.
+UVM_INFO @ 1500.220 us: (hmac_agent.sv:120) [HMAC] Key provisioned successfully.
+UVM_INFO @ 1650.330 us: (aes_agent.sv:45) [AES] Starting entropy feed.
+UVM_INFO @ 2200.500 us: (sw_logger_if.sv:400) [SW_LOG] Test: data_integrity_escalation_reset_test
+UVM_INFO @ 2250.600 us: (sw_logger_if.sv:400) [SW_LOG] Step 1: Triggering alert via escalation.
+UVM_INFO @ 2300.700 us: (alert_handler_if.sv:88) [ALERT] Class A alert received. Escalation timer started.
+UVM_INFO @ 2657.512088 us: (uvm_report_catcher.svh:705) [UVM/REPORT/CATCHER]
+UVM_ERROR @ 2657.512088 us: (sw_logger_if.sv:523) [data_integrity_escalation_reset_test_prog_sim_dv(sw/device/tests/sim_dv/data_integrity_escalation_reset_test.c:362)] CHECK-STATUS-fail: %r
+UVM_FATAL @ 2657.512088 us: (uvm_report_catcher.svh:705) [UVM/REPORT/CATCHER]
+UVM_INFO @ 2660.000000 us: (chip_env.sv:500) [CHIP] Watchdog timer check... OK.
+xmsim: *E,ASRTST (/src/lowrisc_dv_chip_sim_0.1/tb.sv,900): (time 2657512088 PS) Assertion tb.Top_Level_Integrity_Check has failed
+UVM_INFO @ 2700.000000 us: (uvm_report_server.sv:400) --- UVM REPORT SUMMARY ---
+UVM_INFO @ 2700.000000 us: (uvm_report_server.sv:400) Quit count reached!

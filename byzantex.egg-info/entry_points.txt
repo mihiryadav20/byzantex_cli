@@ -1,0 +1,2 @@
+[console_scripts]
+byzantex = byzantex.cli:app

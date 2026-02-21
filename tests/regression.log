@@ -1,0 +1,11 @@
+UVM_INFO @ 3620000000 ps: (otbn_core_model.sv:210) [OTBN_MODEL] Instruction fetch active at PC 0x00000040
+UVM_INFO @ 3621500000 ps: (tl_agent_monitor.sv:88) [TL_UL_MON] a_valid: 1, a_opcode: PutFullData, a_addr: 0x4000
+UVM_INFO @ 3622247063 ps: (uvm_report_catcher.svh:705) [UVM/REPORT/CATCHER]
+UVM_ERROR @ 3622247063 ps: (cip_base_vseq.sv:830) [uvm_test_top.env.virtual_sequencer.otbn_common_vseq] Check failed (!has_outstanding_access()) Waited 10000 cycles to issue a reset with no outstanding accesses.
+UVM_INFO @ 3622247063 ps: (uvm_report_catcher.svh:705) [UVM/REPORT/CATCHER]
+UVM_INFO @ 3625000000 ps: (cip_base_vseq.sv:400) [OTBN_SEQ] Attempting secondary reset sequence...
+UVM_INFO @ 8000000000 ps: (otbn_mem_util.sv:120) [IMEM_LOAD] Loading random instruction sequence 44
+UVM_INFO @ 10178000000 ps: (tl_agent_monitor.sv:92) [TL_UL_MON] d_valid: 0, waiting for response...
+UVM_ERROR @ 10178581868 ps: (cip_base_vseq.sv:830) [uvm_test_top.env.virtual_sequencer.otbn_common_vseq] Check failed (!has_outstanding_access()) Waited 10000 cycles to issue a reset with no outstanding accesses.
+UVM_INFO @ 10178581868 ps: (uvm_report_catcher.svh:705) [UVM/REPORT/CATCHER]
+UVM_FATAL @ 10178582000 ps: (uvm_report_server.sv:400) [UVM/REPORT/SERVER] Quit count reached! Simulation aborting.
