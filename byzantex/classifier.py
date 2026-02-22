@@ -62,6 +62,10 @@ class Classifier:
         if 'sw_logger' in file_lower:
             return ('TEST', 'Software logging interface issue.')
 
+        # SVA checker → TEST
+        if '_checker' in file_lower or '/sva/' in file_lower:
+            return ('TEST', 'SVA checker assertion failed.')
+
         # Software test file → TEST
         if file_path.endswith('.c') or file_path.endswith('.cc'):
             return ('TEST', 'Software test failed.')

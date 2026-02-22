@@ -128,7 +128,14 @@ def show_header(failures_count: int, time_taken: float, ip_name: str):
     console.print()
 
 
-def show_failure(num: int, failure: dict, category: str, reasoning: str):
+def show_failure(
+    num: int,
+    failure: dict,
+    category: str,
+    reasoning: str,
+    resolved_path: str = None,
+    file_type: str = None,
+):
     """Render one failure in a colored bordered panel."""
 
     cat_display = {
@@ -148,6 +155,13 @@ def show_failure(num: int, failure: dict, category: str, reasoning: str):
     table.add_row("Time",     failure.get('timestamp', 'unknown'))
     table.add_row("File",     f"[bold white]{failure.get('file_path', 'unknown')}[/bold white]")
     table.add_row("Line",     f"[yellow]{failure.get('line_number', '?')}[/yellow]")
+
+    if resolved_path:
+        table.add_row("Path", f"[dim]{resolved_path}[/dim]")
+
+    if file_type:
+        ft_color = "red" if file_type == "rtl" else "yellow" if file_type == "dv" else "white"
+        table.add_row("FileType", f"[bold {ft_color}]{file_type.upper()}[/bold {ft_color}]")
 
     if failure.get('assertion_name'):
         table.add_row("Assertion", f"[cyan]{failure['assertion_name']}[/cyan]")
